@@ -1,0 +1,16 @@
+{
+  "name": "desktop-pet",
+  "version": "1.0.0",
+  "description": "Nova - 3D Interactive AI Desktop Pet & PC Companion",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx esbuild renderer/app.js --bundle --outfile=renderer/bundle.js --format=iife --platform=browser",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1"
+  }
+}
